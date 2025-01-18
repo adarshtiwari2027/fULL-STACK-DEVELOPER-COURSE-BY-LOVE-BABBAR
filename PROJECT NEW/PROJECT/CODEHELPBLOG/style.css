@@ -1,0 +1,22 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.bodyclass {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  /* background-color: aqua; */
+  max-width: 100vh;
+  border: 2px solid black;
+}
+.image_container {
+  max-width: inherit;
+  max-height: inherit;
+  height: 100%;
+  width: 100%;
+}

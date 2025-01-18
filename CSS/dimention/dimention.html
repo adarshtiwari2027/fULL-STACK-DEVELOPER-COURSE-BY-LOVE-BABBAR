@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dimention.css" />
+  </head>
+  <body>
+    <pre>
+    <div class="box">
+      hello everyone Remote Authentication Dial-In User Service (RADIUS)
+      attributes are used to define specific authentication, authorization, and
+      accounting (AAA) elements in a user profile, which are stored on the
+      RADIUS program. This chapter lists the RADIUS attributes that are
+      supported. Finding Feature Information RADIUS Attributes Overview
+      If three values are specified, the third value is interpreted as <blur-radius>. The larger this value, the bigger the blur, so the shadow becomes bigger and lighter. Negative values are not allowed. If not specified, it will be set to 0 (meaning that the shadow's edge will be sharp). The specification does not include an exact algorithm for how the blur radius should be calculated; however, it does elaborate as follows:
+        …for a long, straight shadow edge, this should create a color transition the length of the blur distance that is perpendicular to and centered on the shadow's edge, and that ranges from the full shadow color at the radius endpoint inside the shadow to fully transparent at the endpoint outside it.
+        
+        If four values are specified, the fourth value is interpreted as <spread-radius>. Positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink. If not specified, it will be set to 0 (that is, the shadow will be the same size as the element).
+        inset Optional
+        Changes the shadow from an outer box-shadow to an inner box-shadow (as if the content is pressed into the box). Inset shadows are drawn inside the box's border (even if the border is transparent), and they appear above the background but below the content. By default, the shadow behaves like a drop shadow, giving the appearance that the box is elevated above its content. This is the default behavior when inset is not specified.
+        
+        Interpolation
+        When animating shadows, such as when multiple shadow values on a box transition to new values on hover, the values are interpolated. Interpolation determines intermediate values of properties, such as the blur radius, spread radius, and color, as shadows transition. For each shadow in a list of shadows, the color, x, y, blur, and spread transition; the color as <color>, and the other values as <length>s.
+        
+        In interpolating multiple shadows between two comma-separated lists of multiple box shadows, the shadows are paired, in order, with interpolation occurring between paired shadows. If the lists of shadows have different lengths, then the shorter list is padded at the end with shadows whose color is transparent, and X, Y, and blur are 0, with the inset, or lack of inset, being set to match. If in any pair of shadows, one has inset set and the other does not, the entire shadow list is uninterpolated; the shadows will change to the new values without an animating effect.
+        
+        Formal definition
+        Initial value	none
+        Applies to	all elements. It also applies to ::first-letter.
+        Inherited	no
+        Computed value	any length made absolute; any specified color computed; otherwise as specified
+        Animation type	a shadow list
+        Formal syntax
+        box-shadow = 
+          <spread-shadow>#  
+        
+        <spread-shadow> = 
+          <'box-shadow-color'>?                               &&
+          [ <'box-shadow-offset'> [ <'box-shadow-blur'> <'box-shadow-spread'>? ]? ]  &&
+          <'box-shadow-position'>?                            
+        
+        <box-shadow-color> = 
+          <color>#  
+        
+        <box-shadow-offset> = 
+          [ none | <length>{2} ]#  
+        
+        <box-shadow-blur> = 
+          <length [0,∞]>#  
+        
+        <box-shadow-spread> = 
+          <length>#  
+        
+        <box-shadow-position> = 
+          [ outset | inset ]#  
+        
+        Examples
+        Setting three shadows
+        In this example, we include three shadows: an inset shadow, a regular drop shadow, and a 2px shadow that creates a border effect (we could have used an outline instead for that third shadow).
+        
+        HTML
+        html
+        play
+        Copy to Clipboard
+        <blockquote>
+          <q>
+            You may shoot me with your words,<br />
+            You may cut me with your eyes,<br />
+            You may kill me with your hatefulness,<br />
+            But still, like air, I'll rise.
+          </q>
+          <p>&mdash; Maya Angelou</p>
+        </blockquote>
+        CSS
+        css
+        play
+        Copy to Clipboard
+        blockquote {
+          padding: 20px;
+          box-shadow:
+            inset 0 -3em 3em rgb(0 200 0 / 30%),
+            0 0 0 2px white,
+            0.3em 0.3em 1em rgb(200 0 0 / 60%);
+        }
+        Result
+    </div>
+   <pre> <div class="contant"> contant If three values are specified, the third value is interpreted as <blur-radius>. The larger this value, the bigger the blur, so the shadow becomes bigger and lighter. Negative values are not allowed. If not specified, it will be set to 0 (meaning that the shadow's edge will be sharp). The specification does not include an exact algorithm for how the blur radius should be calculated; however, it does elaborate as follows:
+    …for a long, straight shadow edge, this should create a color transition the length of the blur distance that is perpendicular to and centered on the shadow's edge, and that ranges from the full shadow color at the radius endpoint inside the shadow to fully transparent at the endpoint outside it.
+    
+    If four values are specified, the fourth value is interpreted as <spread-radius>. Positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink. If not specified, it will be set to 0 (that is, the shadow will be the same size as the element).
+    inset Optional
+    Changes the shadow from an outer box-shadow to an inner box-shadow (as if the content is pressed into the box). Inset shadows are drawn inside the box's border (even if the border is transparent), and they appear above the background but below the content. By default, the shadow behaves like a drop shadow, giving the appearance that the box is elevated above its content. This is the default behavior when inset is not specified.
+    
+    Interpolation
+    When animating shadows, such as when multiple shadow values on a box transition to new values on hover, the values are interpolated. Interpolation determines intermediate values of properties, such as the blur radius, spread radius, and color, as shadows transition. For each shadow in a list of shadows, the color, x, y, blur, and spread transition; the color as <color>, and the other values as <length>s.
+    
+    In interpolating multiple shadows between two comma-separated lists of multiple box shadows, the shadows are paired, in order, with interpolation occurring between paired shadows. If the lists of shadows have different lengths, then the shorter list is padded at the end with shadows whose color is transparent, and X, Y, and blur are 0, with the inset, or lack of inset, being set to match. If in any pair of shadows, one has inset set and the other does not, the entire shadow list is uninterpolated; the shadows will change to the new values without an animating effect.
+    
+    Formal definition
+    Initial value	none
+    Applies to	all elements. It also applies to ::first-letter.
+    Inherited	no
+    Computed value	any length made absolute; any specified color computed; otherwise as specified
+    Animation type	a shadow list
+    Formal syntax
+    box-shadow = 
+      <spread-shadow>#  
+    
+    <spread-shadow> = 
+      <'box-shadow-color'>?                               &&
+      [ <'box-shadow-offset'> [ <'box-shadow-blur'> <'box-shadow-spread'>? ]? ]  &&
+      <'box-shadow-position'>?                            
+    
+    <box-shadow-color> = 
+      <color>#  
+    
+    <box-shadow-offset> = 
+      [ none | <length>{2} ]#  
+    
+    <box-shadow-blur> = 
+      <length [0,∞]>#  
+    
+    <box-shadow-spread> = 
+      <length>#  
+    
+    <box-shadow-position> = 
+      [ outset | inset ]#  
+    
+    Examples
+    Setting three shadows
+    In this example, we include three shadows: an inset shadow, a regular drop shadow, and a 2px shadow that creates a border effect (we could have used an outline instead for that third shadow).
+    
+    HTML
+    html
+    play
+    Copy to Clipboard
+    <blockquote>
+      <q>
+        You may shoot me with your words,<br />
+        You may cut me with your eyes,<br />
+        You may kill me with your hatefulness,<br />
+        But still, like air, I'll rise.
+      </q>
+      <p>&mdash; Maya Angelou</p>
+    </blockquote>
+    CSS
+    css
+    play
+    Copy to Clipboard
+    blockquote {
+      padding: 20px;
+      box-shadow:
+        inset 0 -3em 3em rgb(0 200 0 / 30%),
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+    }
+    Result</div></pre>
+    </pre>
+  </body>
+</html>

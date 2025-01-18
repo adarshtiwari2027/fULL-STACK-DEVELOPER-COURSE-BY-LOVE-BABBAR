@@ -1,0 +1,15 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 100px;
+}
+.box:hover {
+  transform: rotate(90deg);
+  transition: all 3s linear 0s;
+}

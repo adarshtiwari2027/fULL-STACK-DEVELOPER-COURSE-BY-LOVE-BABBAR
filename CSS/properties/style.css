@@ -1,0 +1,22 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.container {
+  border: 1px solid black;
+  height: 1200px;
+  width: 600px;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+  background-color: rgb(177, 177, 130);
+  display: grid;
+  gap: 2px;
+  align-content: baseline;
+}
+.box {
+  border: 1px solid red;
+  /* height: 100px;
+  width: 200px; */
+  /* grid-auto-rows: minmax(100, auto); */
+}

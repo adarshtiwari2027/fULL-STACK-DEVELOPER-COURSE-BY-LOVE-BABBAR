@@ -1,0 +1,19 @@
+div {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  padding-top: 10px;
+  display: inline;
+}
+.box:hover {
+  transform: perspective(10px) translateZ(-10px);
+  transition: all 3s linear 2s;
+}
+.scale:hover {
+  transform: perspective(10px) scaleZ(3);
+}

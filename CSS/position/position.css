@@ -1,0 +1,16 @@
+#big {
+  background-color: aqua;
+  width: 1000px;
+  height: 1000px;
+  border: 2px;
+  border-color: blueviolet;
+}
+div {
+  display: inline;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+#button:hover {
+  background-color: rgba(red, green, blue, alpha);
+}

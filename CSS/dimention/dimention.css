@@ -1,0 +1,17 @@
+.box {
+  text-align: center;
+  max-height: 400px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: scroll;
+  background-color: aquamarine;
+}
+.contant {
+  text-align: center;
+  margin: 10px;
+  min-height: 100px;
+  min-width: 300px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  overflow: auto;
+}
