@@ -33,3 +33,7 @@ function sum(a, b) {
 let ans = sum(2, 4, 6, 7, 8);
 console.log(ans);
 // hellow everyone
+//nknkKDNXKN
+
+
+//AKDXLADXLAHUX
