@@ -67,7 +67,7 @@ let person = {
 
 //try and catch blog
 try {
-    person.fullname = avdesh;
+    person.fullname = avdeshcle;
 
 
 } catch (e) {
