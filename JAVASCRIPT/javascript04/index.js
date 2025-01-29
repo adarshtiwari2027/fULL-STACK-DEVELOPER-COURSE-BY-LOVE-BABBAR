@@ -12,6 +12,7 @@ let stand = function walk() {
 }
 stand();
 
+
 // arguments  map and form a object form..
 
 // function sum(a, b) {
@@ -32,3 +33,43 @@ function sum(a, b) {
 }
 let ans = sum(2, 4, 6, 7, 8);
 console.log(ans);
+
+// default parameters
+
+function intrest(p, r = 5, t = 3) {
+    return p * r * t / 100;
+};
+console.log(intrest(1000, 4));
+//getter shetter
+
+// getter to access the value
+// shtter to update or manipulate the value
+let person = {
+    firstname: 'adarsh',
+    lastname: ' tiwari',
+    get fullname() {
+        return `${person.firstname} ${person.lastname}`;
+
+
+
+    },
+
+    // Set fullname(value) {
+    //     let parts = value.split('');
+    //     this.firstname = parts[0];
+    //     this.lastname = parts[1];
+
+    // }
+};
+// console.log(fullname());
+
+
+
+//try and catch blog
+try {
+    person.fullname = avdesh;
+
+
+} catch (e) {
+    alert("this is not proper input")
+}
