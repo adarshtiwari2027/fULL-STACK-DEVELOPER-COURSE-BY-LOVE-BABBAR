@@ -46,30 +46,59 @@ console.log(intrest(1000, 4));
 // shtter to update or manipulate the value
 let person = {
     firstname: 'adarsh',
-    lastname: ' tiwari',
-    get fullname() {
+    lastname: 'tiwari',
+    get fullname1() {
         return `${person.firstname} ${person.lastname}`;
 
 
 
     },
+    set fullname1(value){
+        if (typeof value !=String){
+            throw new error("you have not send a string");
+            
+        }
+        let parts= value.split(' ');
+        this.firstname =parts[0];
+        this.lastname= parts[1];
 
-    // Set fullname(value) {
-    //     let parts = value.split('');
-    //     this.firstname = parts[0];
-    //     this.lastname = parts[1];
-
-    // }
+    }
 };
 // console.log(fullname());
 
 
 
-//try and catch blog
-try {
-    person.fullname = avdeshcle;
+// //try and catch blog
+// try {
+//     person.fullname1 = true;
 
 
-} catch (e) {
-    alert("this is not proper input")
+// } 
+// catch (e) {
+//     alert(e);
+// }
+
+// console.log(person.fullname1);
+
+// scopr variable  ..
+{
+    let a=5;
+    console.log(a);
 }
+// console.log(a);
+
+ for(var i=0 ; i<10 ;i++){
+    console.log(i);
+
+ }
+//  console.log(i);
+
+
+// reducing an array
+ let a =[1,3,4,5];
+ let total =0;
+ for(let value of a)
+    total=total +value;
+console.log(total);
+// methode 2
+a.reduce((accumaltor ,currentvalue)=>ccumaltor+currentvalue,0);
