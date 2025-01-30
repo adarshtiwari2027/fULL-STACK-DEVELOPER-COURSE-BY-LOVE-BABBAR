@@ -95,10 +95,11 @@ let person = {
 
 
 // reducing an array
- let a =[1,3,4,5];
- let total =0;
- for(let value of a)
-    total=total +value;
-console.log(total);
+ let a =[1,3,4,5,6];
+//  let total =0;
+//  for(let value of a)
+//     total=total +value;
+// console.log(total);
 // methode 2
-a.reduce((accumaltor ,currentvalue)=>ccumaltor+currentvalue,0);
+let totalsum=a.reduce((accumulator,currentvalue)=>accumulator+currentvalue,0);
+console.log(totalsum);
